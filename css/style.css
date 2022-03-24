@@ -9,14 +9,18 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333333;
     background: url("../img/main-screen__bgc.png") no-repeat;
-    width: 1920px;
-    height: 960px;
+    background-size:cover;
+
 }
 .header__top
 {
     display: flex;
-  padding-top:40px;
+    align-items: center;
+    padding-top:40px;
     padding-bottom:  40px;
+    padding-left: 80px;
+    padding-rigth: 80px;
+    box-sizing: border-box;
     border: 1px green solid;
     max-width: 1920px;
     width: 100%;
@@ -24,7 +28,7 @@ body {
 }
 .header__logo
 {
-    margin-left: 80px;
+    flex:0 0 auto;
     width: 40px;
     height: 40px;
     background-image: url("../img/logo.svg");
@@ -42,7 +46,7 @@ body {
 .main-menu
 {
 display: flex;
-
+    margin: 0 auto;
 }
 .main-menu__items
 {
@@ -63,6 +67,7 @@ display: flex;
 }
 .header__button
 {
+    margin-right: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,8 +76,6 @@ display: flex;
     min-height: 44px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     border-radius: 50px;
-
-    margin-right:80px ;
 }
 .header__button a
 {
@@ -86,15 +89,19 @@ display: flex;
 {
     display: flex;
     justify-content: center;
+    flex-flow: column;
+
 }
 .main__container
 {
     border: 2px #82004f solid;
-    height: 500px;
-    width: 1300px;
+    height: auto;
+    max-width: 1300px;
+    width: 100%;
 }
 .main__heading
 {
+    margin-top: 190px;
     border: 1px yellow solid;
     width: 920px;
     height: 180px;
@@ -106,14 +113,68 @@ display: flex;
     line-height: 1.4;
     color:white;
 }
-.main__cards-list
+.main__card-list
 {
+    margin-top: 50px;
 display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(100px,100px));
+    border: 1px;
+    grid-gap: 30px;
 }
 .main__card
-{
+{display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
     width: 102px;
     height: 112px;
-    border: 1px white solid;
 
+    background: #121212;
+
+}
+.main__card h2
+{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.4;
+    color:white;
+}
+.main__card p
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: white;
+}
+.main__line
+{
+    display: flex;
+    align-items: center;
+    margin-top: 220px;
+    background: #121212;
+    border: #46c603 3px solid;
+    max-width: 1920px;
+    min-height: 130px;
+}
+.main__line-button
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 169px;
+    width: 100%;
+
+    min-height: 44px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+}
+.line-button
+{
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
 }
