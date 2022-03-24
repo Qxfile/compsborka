@@ -8,21 +8,18 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333333;
-
-}
-.header__center
-{
+    background: url("../img/main-screen__bgc.png") no-repeat;
     width: 1920px;
-    min-height: 960px;
-    border: 1px red solid;
-    background-image: url("../img/main-screen__bgc.png");
+    height: 960px;
 }
 .header__top
 {
     display: flex;
-    margin-top:38px;
+  padding-top:40px;
+    padding-bottom:  40px;
     border: 1px green solid;
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     height: 44px;
 }
 .header__logo
@@ -35,9 +32,10 @@ body {
 .header__main-menu
 {
     display: flex;
-    margin-left: 522px;
+    margin: 0 auto;
     border: 1px solid purple;
-    width: 745px;
+    max-width: 745px;
+    width: 100%;
     min-height: 24px;
     align-items: center;
 }
@@ -73,7 +71,8 @@ display: flex;
     min-height: 44px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     border-radius: 50px;
-    margin-left: 270px;
+
+    margin-right:80px ;
 }
 .header__button a
 {
@@ -83,4 +82,38 @@ display: flex;
     box-sizing: border-box;
     padding: 10px 30px;
 }
+.main
+{
+    display: flex;
+    justify-content: center;
+}
+.main__container
+{
+    border: 2px #82004f solid;
+    height: 500px;
+    width: 1300px;
+}
+.main__heading
+{
+    border: 1px yellow solid;
+    width: 920px;
+    height: 180px;
+}
+.main__heading h1
+{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.4;
+    color:white;
+}
+.main__cards-list
+{
+display: grid;
+}
+.main__card
+{
+    width: 102px;
+    height: 112px;
+    border: 1px white solid;
 
+}
