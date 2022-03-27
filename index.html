@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="start-screen">
 <header class="header">
         <div class="header__top">
             <div class="header__logo"></div>
@@ -22,16 +23,14 @@
                     <li class="main-menu__items"><a href="#">Контакты</a></li>
                 </ul>
             </div>
-            <div class="header__button"><a href="#">Зайти в кабинет</a></div>
+            <a class ="header__button"href="#">Зайти в кабинет</a>
         </div>
-    </div>
 </header>
-<main class="main">
     <div class="main__container">
-    <div class="main__heading">
-        <h1>Первый курс
-        по компьютерной сборке</h1>
-    </div>
+        <div class="main__heading">
+            <h1>Первый курс
+                по компьютерной сборке</h1>
+        </div>
         <div class="main__card-list">
             <div class="main__card"><h2>18</h2><p>Дней</p></div>
             <div class="main__card"><h2>18</h2><p>Часов</p></div>
@@ -40,7 +39,20 @@
         </div>
     </div>
     <div class="main__line">
-        <div class="main__line-button"><a class="line-button" href="#">Заказать курс</a></div>
+        <div class="container">
+       <a class="line-button" href="#">Заказать курс</a>
+            <div class="main__people">
+                <h3>Учеников всего: </h3><span>200</span>
+                <h3>Успешно закончили курс:</h3><span>190</span>
+            </div>
+
+    </div>
+    </div>
+</div>
+<main class="main">
+    <div class="main__about container">
+            <div class="main__border-gradient"><img class="img-main" src="img/pc.png"></div>
+        <div class="main__about-text"><h3>Чем мы занимаемся?</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </p></div>
     </div>
 </main>
 </body>
